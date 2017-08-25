@@ -1,0 +1,6 @@
+// 对于整个 md-list-item 内部有一个直接子布局 div,该 div 为 flex 容器,主轴为 row(横向从左至右)
+// align-items 即交叉轴纵轴方向设为 center
+// md-icon 为其子布局 先修改 align-self: flex-start 使该 icon 个体对齐右边文字
+md-icon {
+  align-self: flex-start; // 属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。
+}
