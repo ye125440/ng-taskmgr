@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
-  MdButtonModule, MdCardModule, MdIconModule, MdToolbarModule, MdInputModule, MdListModule, MdSlideToggleModule
+  MdButtonModule, MdCardModule, MdIconModule, MdToolbarModule, MdInputModule, MdListModule, MdSlideToggleModule,
+  MdGridListModule, MdDialogModule, MdAutocompleteModule
 } from '@angular/material';
 
 @NgModule({
@@ -14,6 +15,9 @@ import {
     MdInputModule,
     MdListModule,
     MdSlideToggleModule,
+    MdGridListModule,
+    MdDialogModule,
+    MdAutocompleteModule,
   ],
   exports: [
     CommonModule, // 把公用模块导出
@@ -24,6 +28,9 @@ import {
     MdInputModule,
     MdListModule,
     MdSlideToggleModule,
+    MdGridListModule,
+    MdDialogModule,
+    MdAutocompleteModule,
   ],
   declarations: []
 })
