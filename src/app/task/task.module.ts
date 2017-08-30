@@ -22,7 +22,8 @@ import { CopyTaskComponent } from './copy-task/copy-task.component';
     CopyTaskComponent
   ],
   entryComponents: [
-    NewTaskComponent
+    NewTaskComponent,
+    CopyTaskComponent
   ]
 })
 export class TaskModule { }

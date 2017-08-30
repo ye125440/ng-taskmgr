@@ -1,12 +1,9 @@
 <form>
-  <h2 md-dialog-title>新建项目</h2>
+  <h2 md-dialog-title>移动本列表所有内容</h2>
   <div md-dialog-content>
-    <md-input-container class="full-width">
-      <input mdInput type="text" placeholder="项目名称">
-    </md-input-container>
-    <md-input-container class="full-width">
-      <input mdInput type="text" placeholder="项目描述">
-    </md-input-container>
+    <md-select placeholder="请选择目标列表">
+      <md-option *ngFor="let list of lists" [value]="list">{{list.name}}</md-option>
+    </md-select>
   </div>
   <div md-dialog-actions>
     <button type="button" md-raised-button color="primary" (click)="onClick()">保存</button>

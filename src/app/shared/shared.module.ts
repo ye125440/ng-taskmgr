@@ -3,8 +3,9 @@ import { CommonModule } from '@angular/common';
 import {
   MdButtonModule, MdCardModule, MdIconModule, MdToolbarModule, MdInputModule, MdListModule, MdSlideToggleModule,
   MdGridListModule, MdDialogModule, MdAutocompleteModule, MdMenuModule, MdCheckboxModule, MdTooltipModule,
-  MdRadioModule, MdDatepickerModule, MdNativeDateModule
+  MdRadioModule, MdDatepickerModule, MdNativeDateModule, MdSelectModule
 } from '@angular/material';
+import { ComfirmDialogComponent } from './comfirm-dialog/comfirm-dialog.component';
 
 @NgModule({
   imports: [
@@ -25,6 +26,7 @@ import {
     MdRadioModule,
     MdDatepickerModule,
     MdNativeDateModule,
+    MdSelectModule,
   ],
   exports: [
     CommonModule, // 把公用模块导出
@@ -44,7 +46,8 @@ import {
     MdRadioModule,
     MdDatepickerModule,
     MdNativeDateModule,
+    MdSelectModule,
   ],
-  declarations: []
+  declarations: [ComfirmDialogComponent]
 })
 export class SharedModule { }
