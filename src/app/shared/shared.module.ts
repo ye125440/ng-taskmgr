@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
   MdButtonModule, MdCardModule, MdIconModule, MdToolbarModule, MdInputModule, MdListModule, MdSlideToggleModule,
-  MdGridListModule, MdDialogModule, MdAutocompleteModule
+  MdGridListModule, MdDialogModule, MdAutocompleteModule, MdMenuModule, MdCheckboxModule, MdTooltipModule,
+  MdRadioModule, MdDatepickerModule, MdNativeDateModule
 } from '@angular/material';
 
 @NgModule({
@@ -18,6 +19,12 @@ import {
     MdGridListModule,
     MdDialogModule,
     MdAutocompleteModule,
+    MdMenuModule,
+    MdCheckboxModule,
+    MdTooltipModule,
+    MdRadioModule,
+    MdDatepickerModule,
+    MdNativeDateModule,
   ],
   exports: [
     CommonModule, // 把公用模块导出
@@ -31,6 +38,12 @@ import {
     MdGridListModule,
     MdDialogModule,
     MdAutocompleteModule,
+    MdMenuModule,
+    MdCheckboxModule,
+    MdTooltipModule,
+    MdRadioModule,
+    MdDatepickerModule,
+    MdNativeDateModule,
   ],
   declarations: []
 })
