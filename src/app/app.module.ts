@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MdSidenavModule } from '@angular/material';
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
@@ -21,6 +22,7 @@ import { TaskModule } from './task/task.module';
     LoginModule,
     ProjectModule,
     TaskModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

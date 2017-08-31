@@ -17,6 +17,9 @@ main {
   // flex 是 flex-grow, flex-shrink 和 flex-basis 的简写
   // 建议优先使用这个属性，而不是单独写三个分离的属性
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fill-remaining-space {
@@ -25,4 +28,11 @@ main {
 
 .full-width {
   width: 100%
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+
 }
