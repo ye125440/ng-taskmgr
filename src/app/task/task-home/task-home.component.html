@@ -7,10 +7,11 @@
       (deleteTask)="launchConfirmDialog()"
       (editList)="launchEditListDialog()"
     ></app-task-header>
-    <app-task-item *ngFor="let task of list.tasks"
-                   [item]="task"
-                   (taskClick)="launchUpdateDialog(task)">
-    </app-task-item>
+    <app-task-item
+      *ngFor="let task of list.tasks"
+      [item]="task"
+      (taskClick)="launchUpdateDialog(task)"
+    ></app-task-item>
   </app-task-list>
 </div>
 <button class="fab-button" md-fab type="button" (click)="launchNewListDialog()">

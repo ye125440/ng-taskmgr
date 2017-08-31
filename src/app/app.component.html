@@ -7,10 +7,8 @@
       <app-header (toggle)="sidenav.toggle()" (toggleDarkTheme)="switchTheme($event)"></app-header>
     </header>
     <main>
-      <!--<router-outlet></router-outlet>-->
-      <!--<span class="fill-remaining-space"></span>-->
-      <div class="square" [@square]="squareState" (click)="onClick()"></div>
-      <!--<span class="fill-remaining-space"></span>-->
+      <router-outlet></router-outlet>
+      <!--<div class="square" [@square]="squareState" (click)="onClick()"></div>-->
     </main>
     <footer>
       <app-footer>

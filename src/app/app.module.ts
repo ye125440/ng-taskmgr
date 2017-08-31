@@ -22,7 +22,7 @@ import { TaskModule } from './task/task.module';
     LoginModule,
     ProjectModule,
     TaskModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule // 该模块放在最后导入
   ],
   providers: [],
   bootstrap: [AppComponent]
