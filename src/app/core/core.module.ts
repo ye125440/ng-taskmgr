@@ -8,12 +8,14 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { loadSvgResource } from '../utils/svg.util';
 import { SharedModule } from '../shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from '../app-routing.module';
 
 @NgModule({
   imports: [
     SharedModule,
     HttpModule,
-    BrowserAnimationsModule
+    AppRoutingModule,
+    BrowserAnimationsModule // 该模块放在最后导入
   ],
   declarations: [
     HeaderComponent,
@@ -23,7 +25,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   exports: [
     HeaderComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    AppRoutingModule
   ]
 })
 // 核心模块 只加载一次

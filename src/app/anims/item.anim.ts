@@ -1,4 +1,4 @@
-import { trigger, state, transition, style, animate, keyframes } from '@angular/animations';
+import { trigger, state, transition, style, animate } from '@angular/animations';
 
 export const itemAnim = trigger('item', [
   state('in', style({'border-left-width': '6px', 'border-top-height': '6px'})),
