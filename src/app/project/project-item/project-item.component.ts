@@ -1,4 +1,7 @@
-import { Component, EventEmitter, HostBinding, HostListener, Input, OnInit, Output } from '@angular/core';
+import {
+  ChangeDetectionStrategy, Component, EventEmitter, HostBinding, HostListener, Input, OnInit,
+  Output
+} from '@angular/core';
 import { cardAnim } from '../../anims/card.anim';
 
 @Component({
@@ -7,7 +10,9 @@ import { cardAnim } from '../../anims/card.anim';
   styleUrls: ['./project-item.component.scss'],
   animations: [
     cardAnim
-  ]
+  ],
+  // 对于笨组件 所有的变化来自于输入 设置 cd 策略为 onPush
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ProjectItemComponent implements OnInit {
   @Input() item;

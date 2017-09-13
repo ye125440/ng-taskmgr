@@ -1,4 +1,4 @@
-import { Component, EventEmitter, HostListener, Input, OnInit, Output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, HostListener, Input, OnInit, Output } from '@angular/core';
 import { itemAnim } from '../../anims/item.anim';
 
 @Component({
@@ -7,7 +7,8 @@ import { itemAnim } from '../../anims/item.anim';
   styleUrls: ['./task-item.component.scss'],
   animations: [
     itemAnim
-  ]
+  ],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TaskItemComponent implements OnInit {
   @Input() item; // 从 TaskHomeComponent 模版中传来 [item]="task"

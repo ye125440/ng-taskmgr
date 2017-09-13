@@ -16,7 +16,7 @@
   </div>
   <div md-line class="bottom-bar">
     <span class="due-date" *ngIf="item.dueDate">
-      {{item.dueDate | date: "yy-MM-dd"}}
+      {{item.dueDate | date: "yyyy-MM-dd hh:mm:ss"}}
     </span>
     <md-icon *ngIf="item.reminder">alarm</md-icon>
   </div>
