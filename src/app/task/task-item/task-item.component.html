@@ -1,11 +1,16 @@
-<md-list-item class="container"
-              [ngClass]="{
-                'priority-normal': item.priority === 3,
-                'priority-important': item.priority === 2,
-                'priority-emergency': item.priority === 1
-              }"
-              (click)="onItemClick()"
-              [@item]="widerPriority">
+<md-list-item
+  class="container"
+  [ngClass]="{
+    'priority-normal': item.priority === 3,
+    'priority-important': item.priority === 2,
+    'priority-emergency': item.priority === 1
+  }"
+  (click)="onItemClick()"
+  [app-draggable]="true"
+  [dragTag]="'task-item'"
+  [draggedClass]="'drag-start'"
+  [dragData]="item"
+  [@item]="widerPriority">
   <md-checkbox
     class="completion-status"
     [checked]="item.completed"
