@@ -1,27 +1,34 @@
-<form>
-  <md-card>
+<form [formGroup]="form" (ngSubmit)="onSubmit(form, $event)">
+  <md-card class="card">
     <md-card-header>
       <md-card-title>注册：</md-card-title>
     </md-card-header>
     <md-card-content>
       <md-input-container class="full-width">
-        <input mdInput type="text" placeholder="your email address">
+        <input mdInput type="text" placeholder="your email address" formControlName="email">
       </md-input-container>
       <md-input-container class="full-width">
-        <input mdInput type="text" placeholder="your name">
+        <input mdInput type="text" placeholder="your name" formControlName="name">
       </md-input-container>
       <md-input-container class="full-width">
-        <input mdInput type="password" placeholder="your password">
+        <input mdInput type="password" placeholder="your password" formControlName="password">
       </md-input-container>
       <md-input-container class="full-width">
-        <input mdInput type="password" placeholder="repeat your password again">
+        <input mdInput type="password" placeholder="repeat your password again" formControlName="repeat">
       </md-input-container>
-      <md-grid-list cols="6">
-        <md-grid-tile *ngFor="let item of items">
-          <md-icon class="avatar" [svgIcon]="item"></md-icon>
-        </md-grid-tile>
-      </md-grid-list>
-      <button md-raised-button color="primary" type="button">注册</button>
+      <app-image-select
+        [userSvgIcon]="true"
+        [cols]="6"
+        title="选择头像"
+        [items]="items"
+        formControlName="avatar"
+      ></app-image-select>
+      <!--<md-grid-list cols="6">-->
+        <!--<md-grid-tile *ngFor="let item of items">-->
+          <!--<md-icon class="avatar" [svgIcon]="item"></md-icon>-->
+        <!--</md-grid-tile>-->
+      <!--</md-grid-list>-->
+      <button md-raised-button color="primary" type="submit">注册</button>
     </md-card-content>
   </md-card>
 </form>

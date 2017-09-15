@@ -7,10 +7,14 @@ import {
 } from '@angular/material';
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 import { DirectiveModule } from '../directive/directive.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ImageSelectComponent } from './image-select/image-select.component';
 
 @NgModule({
   imports: [
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
     MdSidenavModule,
     MdButtonModule,
     MdCardModule,
@@ -33,6 +37,8 @@ import { DirectiveModule } from '../directive/directive.module';
   ],
   exports: [
     CommonModule, // 把公用模块导出
+    FormsModule,
+    ReactiveFormsModule,
     MdSidenavModule,
     MdButtonModule,
     MdCardModule,
@@ -52,8 +58,9 @@ import { DirectiveModule } from '../directive/directive.module';
     MdNativeDateModule,
     MdSelectModule,
     DirectiveModule,
+    ImageSelectComponent
   ],
-  declarations: [ConfirmDialogComponent],
+  declarations: [ConfirmDialogComponent, ImageSelectComponent],
   entryComponents: [ConfirmDialogComponent]
 })
 export class SharedModule { }
