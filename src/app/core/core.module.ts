@@ -10,12 +10,15 @@ import { SharedModule } from '../shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from '../app-routing.module';
 import 'rxjs/add/operator/take';
+import { ServicesModule } from '../services/services.module';
+import '../utils/debug.util';
 
 @NgModule({
   imports: [
     SharedModule,
     HttpModule,
     AppRoutingModule,
+    ServicesModule.forRoot(),
     BrowserAnimationsModule // 该模块放在最后导入
   ],
   declarations: [
@@ -28,6 +31,13 @@ import 'rxjs/add/operator/take';
     FooterComponent,
     SidebarComponent,
     AppRoutingModule
+  ],
+  providers: [
+    {
+      provide: 'BASE_CONFIG', useValue: {
+        uri: 'http://localhost:3000'
+      }
+    }
   ]
 })
 // 核心模块 只加载一次

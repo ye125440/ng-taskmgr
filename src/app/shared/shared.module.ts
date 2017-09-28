@@ -9,6 +9,7 @@ import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.componen
 import { DirectiveModule } from '../directive/directive.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ImageSelectComponent } from './image-select/image-select.component';
+import { AgeInputComponent } from './age-input/age-input.component';
 
 @NgModule({
   imports: [
@@ -60,7 +61,7 @@ import { ImageSelectComponent } from './image-select/image-select.component';
     DirectiveModule,
     ImageSelectComponent
   ],
-  declarations: [ConfirmDialogComponent, ImageSelectComponent],
+  declarations: [ConfirmDialogComponent, ImageSelectComponent, AgeInputComponent],
   entryComponents: [ConfirmDialogComponent]
 })
 export class SharedModule { }

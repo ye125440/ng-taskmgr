@@ -21,11 +21,13 @@
   <md-card>
     <md-card-header>
       <md-card-title>每日佳句</md-card-title>
-      <md-card-subtitle>高级的感情，最终形成精神和意识；低级的感情，只能沦为脾气和情绪。</md-card-subtitle>
+      <md-card-subtitle>
+        {{quote.cn}}
+      </md-card-subtitle>
     </md-card-header>
-    <img md-card-image src="/assets/quote_fallback.jpg" alt="">
+    <img md-card-image [src]="quote.pic" alt="">
     <md-card-content>
-      Advanced feelings, and ultimately the formation of the spirit and consciousness; low-level feelings, can only be reduced to temper and emotions.
+      {{quote.en}}
     </md-card-content>
   </md-card>
 </form>
