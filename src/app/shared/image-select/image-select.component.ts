@@ -44,7 +44,7 @@ export class ImageSelectComponent implements ControlValueAccessor {
 
   registerOnTouched(fn: any): void {}
 
-  validate(c: FormControl): { [ket: string]: any } {
+  validate(c: FormControl): { [key: string]: any } {
     return this.selected ? null : {
       imageListInvalid: {
         valid: false

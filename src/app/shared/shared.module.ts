@@ -37,7 +37,7 @@ import { AgeInputComponent } from './age-input/age-input.component';
     DirectiveModule,
   ],
   exports: [
-    CommonModule, // 把公用模块导出
+    CommonModule, // 把公用模块、组件导出
     FormsModule,
     ReactiveFormsModule,
     MdSidenavModule,
@@ -59,7 +59,8 @@ import { AgeInputComponent } from './age-input/age-input.component';
     MdNativeDateModule,
     MdSelectModule,
     DirectiveModule,
-    ImageSelectComponent
+    ImageSelectComponent,
+    AgeInputComponent
   ],
   declarations: [ConfirmDialogComponent, ImageSelectComponent, AgeInputComponent],
   entryComponents: [ConfirmDialogComponent]

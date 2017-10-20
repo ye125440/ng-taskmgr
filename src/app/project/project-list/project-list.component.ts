@@ -48,7 +48,7 @@ export class ProjectListComponent implements OnInit {
         {id: 3, name: '一个新项目', desc: '这是一个新项目', coverImg: 'assets/img/covers/3.jpg'},
         {id: 4, name: '又一个新项目', desc: '这又是一个新项目', coverImg: 'assets/img/covers/4.jpg'},
       ];
-      this.cd.markForCheck();
+      // this.cd.markForCheck();
     });
   }
 
